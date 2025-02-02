@@ -1,0 +1,53 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #add;
+    border-radius: 5px;
+}
+
+.search-container button {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-container button:hover {
+    background-color: #ffb700;
+}
+
+.search-container select {
+    padding: 8px;
+    border: 1px solid #add;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border-radius: 10px;
+}
