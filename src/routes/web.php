@@ -14,6 +14,6 @@ use App\Http\Controllers\Test2Controller;
 |
 */
 
-Route::get('/products', [Test2Controller::class, 'index'])->name('produts.index');
+Route::get('/products', [Test2Controller::class, 'index'])->name('products.index');
 Route::get('/products/create', [Test2Controller::class, 'create'])->name('products.create');
 Route::post('/products', [Test2Controller::class, 'store'])->name('products.store');

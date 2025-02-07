@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class Test2Controller extends Controller
@@ -18,7 +19,7 @@ class Test2Controller extends Controller
             $query->orderBy('price', $request->sort);
         }
 
-        $products = $query->paginate(6);
+        $products = $query->paginate();
         return view('products.index', compact('products'));
     }
 
